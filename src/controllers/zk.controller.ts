@@ -23,6 +23,8 @@ export const createCompressedTokenMintHandler = async (
       9
     );
 
+    console.log(`create compressed token mint - ${transactionSignature}`);
+
     return res.status(200).send({
       data: {
         mint,
@@ -64,6 +66,8 @@ export const mintCompressedTokensToHandler = async (
       payer,
       amount * (10 ^ 9)
     );
+
+    console.log(`mint compressed tokens to - ${signature}`);
 
     return res.status(200).send({
       data: {
