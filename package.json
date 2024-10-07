@@ -1,0 +1,25 @@
+{
+  "name": "proxy-ts-server",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "dev": "nodemon dist/index.js",
+    "start": "NODE_ENV=production node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bs58": "^4.0.4",
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0",
+    "nodemon": "^3.1.7",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@lightprotocol/compressed-token": "^0.14.0",
+    "@lightprotocol/stateless.js": "^0.14.1",
+    "@solana/web3.js": "^1.95.3",
+    "bs58": "^6.0.0",
+    "fastify": "^5.0.0",
+    "zod": "^3.23.8"
+  }
+}
